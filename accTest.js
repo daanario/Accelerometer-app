@@ -10,7 +10,7 @@ function onDeviceReady() {
 }
 
 function startWatch(){
-	var options = {frequency:1000}; // Show value every second
+	var options = {frequency:100}; // Show value every second
 	watchID = navigator.accelerometer.watchAcceleration(onSuccess, onError, options);
 }
 
