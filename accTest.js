@@ -23,9 +23,9 @@ function stopWatch(){
 
 function onSuccess(acceleration) {
 	//Store sensor values
-	var accX = acceleration.x;
-	var accY = acceleration.y;
-	var accZ = acceleration.z;
+	var accX = Math.round(acceleration.x);
+	var accY = Math.round(acceleration.y);
+	var accZ = Math.round(acceleration.z);
 	
 	var timestamp = acceleration.timestamp;
 	//Print values to div accelerometer
